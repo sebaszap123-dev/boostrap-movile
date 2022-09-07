@@ -1,0 +1,59 @@
+#title-header {
+    text-align: center;
+}
+
+#footer {
+    background-color: dimgrey;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+#spacer {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+#second-section {
+    background-color: rgb(198, 198, 198);
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+#paragraph-text {
+    font-weight: bold;
+}
+
+#btnStyle {
+    background-color: rgb(0, 166, 255);
+    border-color: rgb(0, 166, 255);
+}
+
+#special-text {
+    color: aquamarine;
+}
+
+.collapse-box {
+    align-items: start;
+    width: 600px;
+    padding: 1%;
+    border-color: red;
+    border-width: 10px;
+}
+
+.container-awa {
+    text-align: start;
+    align-items: center;
+    width: 300px;
+}
+
+#col-collapse {
+    margin-top: 5px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

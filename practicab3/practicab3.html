@@ -2,32 +2,336 @@
 <html lang="en">
 
 <head>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Hello, world!</title>
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap CSS v5.2.0-beta1 agregar css-->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-    </nav>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark justify-content-between">
+            <a class="navbar-brand" href="https://getbootstrap.com/">Bootstrap</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <ul class="nav justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">About us</a>
+                        <a class="dropdown-item" href="#">About you</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">+555 555555</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="firstcarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#firstcarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#firstcarousel" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#firstcarousel" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./images/slide1.jpg" class="w-100 d-block" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide2.jpg" class="w-100 d-block" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/slide3.jpg" class="w-100 d-block" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Title</h3>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#firstcarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#firstcarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container-xl">
+            <div class="col" id="title-header">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+                <p id="special-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic error modi porro distinctio
+                    iure.
+                    Dolore dolorem natus voluptatem quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti, aut.
+                </p>
+            </div>
+        </div>
+        <div class="container-xl">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-12 col-sm-4">
+                    <div class="container-awa">
+                        <div class="card text-black bg-transparent">
+                            <img class="card-img-top" src="./images/slide1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Card Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                    ratione
+                                    consequuntur quasi est. Tempora, at quis provident blanditiis ducimus temporibus!
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button type="button" name="info1" id="btnStyle" class="btn btn-primary">Más
+                                        información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="container-awa">
+                        <div class="card text-black bg-transparent">
+                            <img class="card-img-top" src="./images/slide1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Card Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                    ratione
+                                    consequuntur quasi est. Tempora, at quis provident blanditiis ducimus temporibus!
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button type="button" name="info1" id="btnStyle" class="btn btn-primary">Más
+                                        información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="container-awa">
+                        <div class="card text-black bg-transparent">
+                            <img class="card-img-top" src="./images/slide1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Card Title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                                    ratione
+                                    consequuntur quasi est. Tempora, at quis provident blanditiis ducimus temporibus!
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <button type="button" name="info1" id="btnStyle" class="btn btn-primary">Más
+                                        información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="spacer"></div>
+        <div class="container-fluid" id="second-section">
+            <h1>Hello world</h1>
+            <br></br>
+            <p id="paragraph-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatum
+                officia architecto a,
+                molestias provident praesentium inventore. Fugiat ex, maiores placeat tempore accusantium sequi quis
+                impedit dolores, nostrum aspernatur error!</p>
+            <div class="container-fluid">
+                <br>
+                <hr class="hr hr-blurry" />
+                <br>
+            </div>
+            <p id="paragraph-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam neque quasi
+                consequatur est, quam maiores earum a rerum voluptate, debitis recusandae provident enim et ut similique
+                sequi, amet praesentium ratione.</p>
+            <button type="button" class="btn btn-primary" id="btnStyle">Learn more</button>
+            <div class="container-fluid" id="spacer"></div>
+            <div class="container-fluid" id="spacer"></div>
+
+        </div>
+        <div class="container-xl">
+            <div class="col" id="title-header">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+                <p id="special-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, hic error modi porro distinctio
+                    iure.
+                    Dolore dolorem natus voluptatem quibusdam. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Deleniti, aut.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center g-2">
+            <div class="col-12 col-sm-4">
+                <div class="collapse-box">
+                    <div class="col" id="col-collapse">
+                        <div class="d-grid gap-2">
+                            <div class="btn btn-primary" id="btnStyle" data-bs-toggle="collapse" href="#collapse-box3"
+                                aria-expanded="false" aria-controls="collapse-box3">
+                                Collapse Item #1
+                            </div>
+                            <div class="collapse" id="collapse-box3">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi aut quae,
+                                    temporibus
+                                    magni
+                                    error illo eveniet pariatur voluptas maxime dolorum incidunt accusamus commodi est,
+                                    explicabo
+                                    nemo similique quaerat iure. Itaque, laudantium rerum. Dolorum, libero illo facilis
+                                    natus
+                                    quo
+                                    cum. Laudantium quaerat est fugit hic corporis libero inventore. Tempora error
+                                    blanditiis
+                                    veritatis rerum id excepturi architecto? Veritatis reiciendis deleniti ipsa officia,
+                                    iusto
+                                    similique? Hic corporis dolorem explicabo tempora recusandae consequuntur ullam
+                                    dolorum,
+                                    laborum
+                                    iusto, officia id? Quo impedit debitis, totam similique provident, accusamus rem
+                                    magnam
+                                    ullam
+                                    voluptatem sequi corrupti minima labore voluptas aspernatur quas nam officiis minus
+                                    numquam.
+                                    At,
+                                    ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="col-collapse">
+                        <div class="d-grid gap-2">
+                            <div class="btn btn-primary" id="btnStyle" data-bs-toggle="collapse" href="#collapse-box2"
+                                aria-expanded="false" aria-controls="collapse-box2">
+                                Collapse Item #2
+                            </div>
+                            <div class="collapse" id="collapse-box2">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi aut quae,
+                                    temporibus
+                                    magni
+                                    error illo eveniet pariatur voluptas maxime dolorum incidunt accusamus commodi est,
+                                    explicabo
+                                    nemo similique quaerat iure. Itaque, laudantium rerum. Dolorum, libero illo facilis
+                                    natus
+                                    quo
+                                    cum. Laudantium quaerat est fugit hic corporis libero inventore. Tempora error
+                                    blanditiis
+                                    veritatis rerum id excepturi architecto? Veritatis reiciendis deleniti ipsa officia,
+                                    iusto
+                                    similique? Hic corporis dolorem explicabo tempora recusandae consequuntur ullam
+                                    dolorum,
+                                    laborum
+                                    iusto, officia id? Quo impedit debitis, totam similique provident, accusamus rem
+                                    magnam
+                                    ullam
+                                    voluptatem sequi corrupti minima labore voluptas aspernatur quas nam officiis minus
+                                    numquam.
+                                    At,
+                                    ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="col-collapse">
+                        <div class="d-grid gap-2">
+                            <div class="btn btn-primary" id="btnStyle" data-bs-toggle="collapse" href="#collapse-box1"
+                                aria-expanded="false" aria-controls="collapse-box1">
+                                Collapse Item #3
+                            </div>
+                            <div class="collapse" id="collapse-box1">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt modi aut quae,
+                                    temporibus
+                                    magni
+                                    error illo eveniet pariatur voluptas maxime dolorum incidunt accusamus commodi est,
+                                    explicabo
+                                    nemo similique quaerat iure. Itaque, laudantium rerum. Dolorum, libero illo facilis
+                                    natus
+                                    quo
+                                    cum. Laudantium quaerat est fugit hic corporis libero inventore. Tempora error
+                                    blanditiis
+                                    veritatis rerum id excepturi architecto? Veritatis reiciendis deleniti ipsa officia,
+                                    iusto
+                                    similique? Hic corporis dolorem explicabo tempora recusandae consequuntur ullam
+                                    dolorum,
+                                    laborum
+                                    iusto, officia id? Quo impedit debitis, totam similique provident, accusamus rem
+                                    magnam
+                                    ullam
+                                    voluptatem sequi corrupti minima labore voluptas aspernatur quas nam officiis minus
+                                    numquam.
+                                    At,
+                                    ipsa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="collapse-box">
+                    <div class="col">
+                        <img src="./images/slide1.jpg" alt="Info">
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="container-fluid" id="footer">
+            <div class="container-xl">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat sequi libero fugiat voluptatem
+                    perferendis possimus. Reiciendis vel, velit explicabo aliquam unde itaque odio tempore, dolore
+                    incidunt,
+                    voluptatem atque obcaecati alias repellat quae quam. Recusandae vel voluptas iusto similique
+                    consectetur, eos harum. Tempora, consequatur dignissimos?
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
